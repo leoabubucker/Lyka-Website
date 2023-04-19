@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <meta name="description" content="Lyka uses Fiverr to securely manage and collect payments. Lyka offers all of their services at a reasonable and negotiable price.">
+    <title>Services</title>
+</head>
+<body>
+    <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
+        <div class="item left-side" id="lNav">
+            <a class='no-style-link' href="index.html">Home</a>
+        </div>
+        <div class="item center"> 
+            <a class='no-style-link' href="about.html">About Us</a>
+        </div>
+        <div class="item right-side" id="rNav" style="cursor:pointer">
+            <a class='no-style-link' onclick="togglePopup('popup-contact')">Contact Us</a>
+
+        </div>
+    </nav>
+    <div class="main-container" style="background-color: rgb(4, 7, 32)">
+            <nav class="nav-bar" id="nav">
+                <div class="item left-side" id="lNav">
+                    <a class='no-style-link' href="index.html">Lyka</a>
+                </div>
+                <div class="item center" id="cNav" data-scroll="false">
+                    Our Services
+                </div>
+                <div class="item right-side" id="rNav" style="cursor:pointer" onclick="toggleMenu()"  >
+                    Menu
+
+                </div>
+            </nav>
+            <div class="popup" id='popup-contact'>
+                <div class="overlay" onclick="togglePopup('popup-contact')"></div>
+                <div class="popup-content" id="popup-content" style="border-radius:12px;">
+                    <div class="close-btn" onclick="togglePopup('popup-contact')">
+                        &times;
+                    </div>
+                    <h1 style="font-size:20px; text-align:center;">Let's Talk</h1>
+                    <form style="margin-top:0%; margin-bottom:auto; margin-left: auto; margin-right:auto; " class="contact-form" action="https://formsubmit.co/38912c8bb0d5465bc48fcc6a1fc57fa1" method="POST">
+                        <div>
+                            <input type="hidden" name="_subject" value="New Email!">
+                            <input type="hidden" name="_next" value="https://lykaweb.netlify.app/form-success.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" style=" padding-left: 5px; width: 30vh; height: 5vh; font-size:15px;" name="name" placeholder="Name" required>
+                            <br><br>
+                            
+                            <input type="email" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="email" placeholder="Email Address" required>
+                            <br><br>
+
+                            <input type="text" style="padding-left: 5px; width: 30vh;height: 10vh; font-size: 15px; " name="message" placeholder="Message" required>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="tos" required>
+                               I have read and agree to the <a class="no-style-link text-link" href="terms.html" target="_blank"> Lyka Web Development Terms of Service </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="privacy" required>
+                                I have read and agree to the <a class="no-style-link text-link" href="privacy-policy.html" target="_blank"> Lyka Web Development Privacy Policy </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="coppa" required>
+                                I affirm that I am at least 18 years of age or have the consent of a parent/guardian to submit this form.
+                            </form-label>
+                            <br><br>
+
+                        </div>
+        
+                        <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px;  " type="submit">Send</button>
+                    </form>   
+                </div>
+            </div>
+            <div class="content-page">
+                <a id="contactButton" class="contact-button" onclick="togglePopup('popup-contact')"> Let's Talk</a>
+                <aside class="sidebar" id="sideMenu">
+                    <ol class="hover-anim">
+                        <li><a class="no-style-link" href="index.html">Home</a></li>
+                        <li><a class="no-style-link" href="about.html">About Us</a></li>
+                        <li><a class="no-style-link" href="services.html">Our Services</a></li>
+                        <li><a class="no-style-link" onclick="togglePopup('popup-contact')" style="cursor: pointer;">Contact Us</a></li>
+                    </ol>
+                </aside>
+                <div class="details" onclick="hideMenu()">
+                    <div class="detail detail1" id="detail1">
+                        <h1> Our Services</h1>
+                        <div class="underline lSlide-anim"></div>
+                        
+                    </div>
+                    <div class="detail detail2">
+                        Lyka provides nuts to bolts front-end web development services. This means we will build a custom website for you including the features listed on our about page. 
+                        <br><br>
+                        Lyka uses Fiverr to securely manage orders and collect payments. If you are interested in working with us, please check out our Fiverr Gig and either message us there or Contact Us.
+                    </div>
+                    <div class="detail detail3">
+                        <h1> Pricing </h1>
+                        <div class="underline lSlide-anim"></div>
+                    </div>
+                    <div class="detail detail4" >
+                        All of our transactions are completed on our Fiverr Page. Pricing and descriptions for our 3 gig options are available there as well as below.
+                        <br><br>
+                        <bold>Please contact us, either through Fiverr or this website, prior to placing an order on Fiverr.</bold>
+                    </div>
+                    
+                     <div class="detail detail5 gridDetail" >
+                        <div class="detail5 subdetail" onmouseover="infoReveal(0)" onmouseleave="infoHide(0)">
+                            <div class="cover" >
+                                <h1>Basic $100</h1>
+                            </div>
+                            <div class="content">
+                               <p>Full design customization. Eye-catching design. Up to 5 pages. 5 revisions. 2 week delivery time. 1 month free support. User-friendly contact form.</p>
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(1)" onmouseleave="infoHide(1)">
+                            <div class="cover" >
+                                <h1>Standard $200</h1>
+                            </div>
+                            <div class="content">
+                               <p>Everything in the Basic Plan but more:
+                                <br><br>
+                                Up to 10 pages. 7 revisions. JavaScript animations. Desktop responsive design. 3 week delivery time. 2 month free support.</p>   
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(2)" onmouseleave="infoHide(2)">
+                            <div class="cover" >
+                                <h1>Premium $300</h1>
+                            </div>
+                            <div class="content">
+                               <p>Everything in the Standard Plan but even more:
+                                <br><br>
+                                Up to 15 pages. 9 revisions. More animations. Full responsive design (including mobile). 1 month delivery time. 4 month free support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+
+                <div class="item logo" style="grid-row: span 2;">
+                    <img src="lyka4.png">
+                </div>
+                <div class="item company">
+                    <h1> Lyka Web Development</h1>
+                    <p>Copyright © 2023 Lyka Web Development</p>
+                </div>
+    
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                <div class="item lHeader" >
+                    <h3> Links </h3>
+                </div>
+    
+                <div class=" item instagram">
+                    <p class="text-link" onclick="window.open('')"> Instagram </p>
+                </div>
+    
+                <div class=" item fiverr">
+                    <p class="text-link" onclick="window.open('')"> Fiverr </p>
+                </div> 
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                
+                <div class="item cHeader">
+                    <h3> Legal </h3>
+                </div>
+    
+                <div class=" item privacy">
+                    <p class="text-link" onclick="window.open('privacy-policy.html')"> Privacy Policy </p>
+                </div> 
+                <div class=" item tos">
+                    <p class="text-link" onclick="window.open('terms.html')"> Terms of Service </p>
+                </div> 
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+    
+                <div class="item rHeader">
+                    <h3> Navigation </h3>
+                </div>
+                <div class=" item home">
+                    <p class="text-link" onclick="window.location.href='index.html';"> Home</p>
+                </div> 
+                <div class=" item about">
+                    <p class="text-link" onclick="window.location.href='about.html';"> About Us </p>
+                </div> 
+                <div class=" item services">
+                    <p class="text-link" onclick="window.location.href='services.html';"> Our Services</p>
+                </div> 
+                <div class=" item contact">
+                    <p class="text-link" onclick="togglePopup('popup-contact')"> Contact Us </p>
+                </div> 
+            </footer>
+    </div>
+</body>
+</html>
+<script src="general.js"></script>
+<script src="devicecheck.js"></script>
+<script>
+    if (isMobile || isTablet){
+        document.getElementById('nav').style.display = "none";
+        document.getElementById('detail1').style.marginTop = "20px";
+        document.getElementById("contactButton").dataset.mobile = "true";
+        document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+    }
+</script>

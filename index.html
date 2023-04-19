@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="description" content="Lyka Web Development (Lyka) is a freelance business committed to providing website development, administration, and maintenance to a personal or business clientele at a reasonable and negotiable price.">
+    </head>
+    <body style="overflow:hidden;">
+        <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
+            <div class="item left-side" id="lNav">
+                <a class='no-style-link' href="about.html">About Us</a>
+            </div>
+            <div class="item center"> 
+                <a class='no-style-link' href="services.html">Our Services</a>
+            </div>
+            <div class="item right-side" id="rNav" style="cursor:pointer">
+                <a class='no-style-link' onclick="togglePopup('popup-contact')">Contact Us</a>
+
+            </div>
+        </nav>
+        <div class="main-container">
+
+ 
+            <div class="popup" id='popup-contact'>
+                <div class="overlay" onclick="togglePopup('popup-contact')"></div>
+                <div class="popup-content" id="popup-content" style="border-radius:12px;">
+                    <div class="close-btn" onclick="togglePopup('popup-contact')">
+                        &times;
+                    </div>
+                    <h1 style="font-size:20px; text-align:center;">Let's Talk</h1>
+                    <form style="margin-top:0%; margin-bottom:auto; margin-left: auto; margin-right:auto; " class="contact-form" action="https://formsubmit.co/38912c8bb0d5465bc48fcc6a1fc57fa1" method="POST">
+                        <div>
+                            <input type="hidden" name="_subject" value="New Email!">
+                            <input type="hidden" name="_next" value="https://lykaweb.netlify.app/form-success.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" style=" padding-left: 5px; width: 30vh; height: 5vh; font-size:15px;" name="name" placeholder="Name" required>
+                            <br><br>
+                            <input type="email" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="email" placeholder="Email Address" required>
+                            <br><br>
+
+                            <input type="text" style="padding-left: 5px; width: 30vh;height: 10vh; font-size: 15px; " name="message" placeholder="Message" required>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="tos" required>
+                               I have read and agree to the <a class="no-style-link text-link" href="terms.html" target="_blank"> Lyka Web Development Terms of Service </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="privacy" required>
+                                I have read and agree to the <a class="no-style-link text-link" href="privacy-policy.html" target="_blank"> Lyka Web Development Privacy Policy </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label>
+                                <input type="checkbox" name="coppa" required>
+                                I affirm that I am at least 18 years of age or have the consent of a parent/guardian to submit this form.
+                            </form-label>
+                            <br><br>
+
+                        </div>
+        
+                        <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px;  " type="submit">Send</button>
+                    </form>      
+                </div>
+            </div>
+            <div class="landing-page">
+                <div id="tiles" class="background">
+
+                </div>
+               
+                <aside class="sidebar hover-anim" id="home-sidebar">
+                    <ol>
+                        <li><a class="no-style-link" href="about.html">About Us</a></li>
+                        <li><a class="no-style-link" href="services.html">Our Services</a></li>
+                        <li><a class="no-style-link" onclick="togglePopup('popup-contact')"style="cursor: pointer;" >Contact Us</a></li>
+                    </ol>
+                </aside>
+                <div class="fadeIn-anim title-content">
+                    <h1> Lyka Web Development </h1>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>
+<script src="tiles.js"></script>
+<script src="general.js"></script>
+<script src="devicecheck.js"></script>
+<script>
+    if (isMobile || isTablet){
+        document.getElementById('home-sidebar').style.display = "none";
+    }
+</script>

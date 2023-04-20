@@ -489,3 +489,16 @@ input[type="checkbox"]{
     margin-left:-20px;
     float:left;
 }
+
+.testimonial{
+    display:grid;
+    height:30vh;
+    width:40vw;
+    background-color: lightgray;
+    color:black;
+    justify-self: center;
+}
+
+.testimonial h1{
+    justify-self: center;
+}

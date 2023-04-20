@@ -92,7 +92,7 @@
                         <li><a class="no-style-link" onclick="togglePopup('popup-contact')"style="cursor: pointer;">Contact Us</a></li>
                     </ol>
                 </aside>
-                <div class="details" onclick="hideMenu()">
+                <div class="details" id="details" onclick="hideMenu()" style="display:grid;">
                     <div class="detail detail1" id="detail1">
                         <h1> About Us </h1>
                         <div class="underline lSlide-anim"></div>
@@ -171,7 +171,20 @@
                                 While we highly recommend you purchase a domain to make your website more professional, we will host your website for free on the Netlify domain (.netlify.app) to host your website until a domain is purchased.</p>
                             </div>
                         </div>
-                    </div>
+
+                            
+                        </div>
+                        <div class="detail detail6">
+                            <h1> Client Testimonial </h1>
+                            <div class="underline lSlide-anim"></div>
+                        </div>
+                        <div class="detail detail7 testimonial" id="testimonial">
+                            <h1> 
+                                "Insert Quote Here" 
+                                <br>
+                                - Gestell Psychiatry
+                            </h1>
+                        </div>
                 </div>
             </div>
 
@@ -241,5 +254,7 @@
         document.getElementById('detail1').style.marginTop = "20px";
         document.getElementById("contactButton").dataset.mobile = "true";
         document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+        document.getElementById('details').style.display = "block";
+        document.getElementById('testimonial').style.width = "100vw";
     }
 </script>

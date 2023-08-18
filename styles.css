@@ -269,6 +269,8 @@ footer .tos{
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    margin: 0px 10px;
+    
     /* border-top-right-radius: 100px; */
     /* border-bottom-right-radius: 100px; */
 }
@@ -500,6 +502,7 @@ input[type="checkbox"]{
 }
 
 .testimonial p{
-    font-size: large;
+    font-size: medium;
     font-style: italic;
+    text-align: justify;
 }
